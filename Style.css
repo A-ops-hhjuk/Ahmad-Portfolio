@@ -1,0 +1,355 @@
+  :root{
+            --blue:rgb(16, 178, 199);
+            --background:#171d29;
+            --blue-hover:rgb(79, 203, 219);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+          ul{
+            list-style: none;
+          }
+          a{
+            text-decoration: none;
+            color: white
+          }
+          html{
+            scroll-behavior: smooth;
+          }
+          body{
+            font-family: sans-serif;
+            background-color: #171d29;
+            color: white;
+        }
+          .zoglid{
+            padding-inline: 90px;
+            padding-top: 50px;
+          }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-block: 22px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            padding-inline: 100px;
+            z-index: 999;
+        }
+        span{
+            color: rgb(27, 207, 231);
+        }
+        .scroll-header header{
+            background-color:var(--background);
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            font-size: 17px;
+            font-family: 'roboto',sans-serif;
+        }
+        .menu a:hover{
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px;
+        }
+        .sittings{
+            display: flex;
+            gap: 10px;
+            font-size: 18px;
+        }
+        .sittings i{
+            cursor: pointer;
+        }
+
+        header nav{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+    .hero{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        gap: 110px;
+    }
+    .hero .left{
+        width: 55%;
+    }
+    .hero h1{
+        font-size: 3.5rem;
+    }
+    .hero h2{
+        font-size: 1.6rem;
+        margin-block: 4px 10px;
+    }
+    .hero .media{
+        display: flex;
+        gap: 22px;
+        font-size: 20px;
+        margin-block: 17px 21px;
+    }
+    .hero .media li{
+        padding: 6px;
+        background-color: white;
+        color: #171d29;
+        border-radius: 50%;
+        padding-top: 7px;
+        transition: .3s;
+    }
+    .hero .media li:hover{
+        background-color: inherit;
+        color: white;
+    }
+    .hero .left p{
+        line-height: 21px;
+        font-family: 'roboto';
+        opacity: .9;
+    }
+    .hero .right img{
+        border-radius: 50%;
+        width: 300px;
+        box-shadow: 1px 1px 20px rgb(222, 236, 255);
+    }
+    .hero .about-me-button{
+          padding:9px 42px;
+        background-color: var(--blue);
+        border-radius: 7px;
+        font-size: 16px;
+        font-family: 'roboto';
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.185);
+    }
+    .hero .about-me-button:hover{
+        background-color: var(--blue-hover);
+        transform: translateY(-2px);
+    }
+    .about{
+         font-family: 'roboto',sans-serif;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 50px;
+         padding-block:160px 100px;   
+    }
+    .about .left img{
+        width: 320px;
+        border-radius: 50%;
+        border: 7px solid black;
+        box-shadow: 1px 1px 20px rgb(222, 236, 255);
+    }
+    .about .right{
+        width: 60%;
+    }
+   
+    .about .right p{
+        margin-block: 20px 30px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+    button{
+        border: none;
+        transition: .3s;
+        color: white;
+    }
+    .about .right a{
+        padding:9px 11px;
+        background-color: var(--blue);
+        border-radius: 8px;
+        font-size: 14px;
+        box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.445);
+    }
+    .about .right button:hover{
+        transform: translatey(-2px);
+    }
+     .skills{
+        text-align: center;
+        font-family: 'roboto',sans-serif;
+        padding-top: 90px;
+        padding-bottom: 80px;
+     }
+     .skills h1{
+        margin-bottom: 80px;
+     }
+     .skills .container{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        gap: 25px;
+        row-gap: 32px;
+     }
+     .skills .card{
+        height: 65vh;
+        width: 360px;
+        padding:35px 10px;
+        background-color: #262e3f;
+        border-radius: 20px;
+        position: relative;
+        border: 4px solid var(--background);
+        transition: .3s;
+        cursor: pointer;
+     }
+     .skills .card:hover{
+        border: 4px solid var(--blue);
+     } 
+     .skills .card i{
+        color: var(--blue);
+        font-size: 32px;
+        margin-bottom: 10px;
+     }
+     .skills .card p{
+        margin-top: 16px;
+        font-size: 17px;
+        line-height: 21px;
+        opacity: .9;
+     }
+     .skills .card h2{
+        font-size: 1.65rem;
+     }
+     .skills .card button{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+        padding:9px 13px;
+        font-size: 14px;
+        background-color: var(--blue);
+        border-radius: 8px;
+        cursor: pointer;
+        transition: .3s;
+        box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.432);
+     }
+     .skills .card button:hover{
+        background-color: var(--blue-hover);
+        box-shadow: 1px 1px 14px rgba(255, 255, 255, 0.432);
+     }
+     footer{
+        text-align: center;
+        padding-block: 27px;
+        padding-inline: 10px;
+        box-shadow: 0 6px 12px white;
+        margin-top: 35px;
+        font-family: 'roboto';
+     }
+     footer .social-media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+     }
+     footer .social-media a{
+        padding: 5px;
+        background-color: white;
+        border-radius: 50%;
+        color: var(--background);
+        font-size: 20px;
+     }
+    
+    .fa-bars{
+        display: none;
+        font-size: 23px;
+    }
+    .menu-bar{
+        position: fixed;
+        z-index: 1000;
+        right: -100%;
+        height: 100vh;
+        width: 230px;
+        background-color: var(--blue);
+        padding-block: 80px 40px;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        font-family: 'roboto';
+        font-size: 17px;
+        transition: .5s;
+    }
+    .menu-bar a:hover{
+        text-decoration: underline;text-decoration-thickness: 2px;text-underline-offset: 4px;
+    }
+    .fa-xmark{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+    }
+    .sidebar-mode .menu-bar{
+      right: 0;
+    }
+
+    @media(width < 1000px){
+        .zoglid,header{
+            padding-inline: 40px;
+        }
+        .hero{
+            gap: 40px;
+        }
+        .hero .left h1{
+            font-size: 2.9rem;
+        }
+        .about .right{
+            width: 65%;
+        }
+    }
+    @media(width < 750px){
+        .hero{
+            height: fit-content;
+            flex-direction: column-reverse;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        .hero .left{
+            width: 100%;
+        }
+        .menu{
+            display: none;
+        }
+        .about{
+            flex-direction: column-reverse;
+        }
+        .about .right{
+            width: 100%;
+        }
+        .fa-bars{
+            display: block;
+        }
+    }
+    @media(width < 500px){
+        .zoglid,header{
+            padding-inline: 20px;
+        }
+        .hero .right img,.about .left img{
+            width: 290px;
+        }
+        
+        .hero .left h1{
+            font-size: 2.5rem;
+        }
+        .about{
+            gap: 30px;
+            padding-top: 120px;
+        }
+        .skills h1{
+            margin-bottom: 40px;
+        }
+        .skills .card{
+            width: 100%;
+            height: fit-content;
+        }
+        .skills .card button{
+            position:static;
+            transform: translateY(0);
+            margin-top: 13px;
+        }
+    }
+    @media(width < 400px){
+        .zoglid{
+            padding-inline: 13px;
+        }
+    }
